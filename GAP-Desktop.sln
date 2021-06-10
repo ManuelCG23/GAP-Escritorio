@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAP-Desktop", "GAP-Desktop\GAP-Desktop.csproj", "{FC4F8785-0B25-475B-A03F-B512B5D5BDCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC4F8785-0B25-475B-A03F-B512B5D5BDCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC4F8785-0B25-475B-A03F-B512B5D5BDCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC4F8785-0B25-475B-A03F-B512B5D5BDCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC4F8785-0B25-475B-A03F-B512B5D5BDCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C78171D0-AD66-408F-AD42-264520B50DAA}
+	EndGlobalSection
+EndGlobal
