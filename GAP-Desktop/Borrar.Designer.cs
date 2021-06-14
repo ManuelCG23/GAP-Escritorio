@@ -29,6 +29,7 @@ namespace PruebaC
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Borrar));
             this.lbl_uno = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -71,24 +72,28 @@ namespace PruebaC
             // 
             // bt_accion
             // 
+            this.bt_accion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.bt_accion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_accion.ForeColor = System.Drawing.Color.White;
             this.bt_accion.Location = new System.Drawing.Point(161, 156);
             this.bt_accion.Name = "bt_accion";
             this.bt_accion.Size = new System.Drawing.Size(129, 59);
             this.bt_accion.TabIndex = 32;
             this.bt_accion.Text = "Borrar";
-            this.bt_accion.UseVisualStyleBackColor = true;
+            this.bt_accion.UseVisualStyleBackColor = false;
             this.bt_accion.Click += new System.EventHandler(this.bt_accion_Click);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(390, 156);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(129, 59);
             this.button1.TabIndex = 33;
             this.button1.Text = "Cancelar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lbl_dos
@@ -128,6 +133,7 @@ namespace PruebaC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(132)))), ((int)(((byte)(161)))));
             this.ClientSize = new System.Drawing.Size(699, 246);
             this.Controls.Add(this.lbl_tres_dos);
             this.Controls.Add(this.lbl_tres);
@@ -137,6 +143,7 @@ namespace PruebaC
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lbl_uno);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Borrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GAP-Borrar";

@@ -188,7 +188,7 @@ namespace PruebaC
 
             while (reader.Read())
             {
-                result = reader.GetString(0);
+                result = reader.GetInt32(0).ToString();
             }
 
             reader.Close();

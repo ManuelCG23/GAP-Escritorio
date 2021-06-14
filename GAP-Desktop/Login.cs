@@ -121,9 +121,9 @@ namespace PruebaC
 
                    // insertarOperacion();          //PENDIENTE 
                     //MessageBox.Show(usuario);
-                    Principal p = new Principal(usuario);
+                    Principal p = new Principal(usuario, this);
                     p.Show();
-                    //this.Close();
+                    this.Hide();
 
                 }
             }

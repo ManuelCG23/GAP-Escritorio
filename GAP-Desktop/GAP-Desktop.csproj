@@ -130,12 +130,6 @@
     <Compile Include="Recuperar.Designer.cs">
       <DependentUpon>Recuperar.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistroEmpresa.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="RegistroEmpresa.Designer.cs">
-      <DependentUpon>RegistroEmpresa.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AñadirRelacion.resx">
       <DependentUpon>AñadirRelacion.cs</DependentUpon>
     </EmbeddedResource>

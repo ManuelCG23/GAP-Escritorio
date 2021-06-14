@@ -15,11 +15,13 @@ namespace PruebaC
     public partial class Principal : Form
     {
         public string usuario;
+        Login l;
 
-        public Principal(string usu)
+        public Principal(string usu, Login lo)
         {
             InitializeComponent();
             this.usuario = usu;
+            this.l = lo;
         }
 
         MySqlConnection conexion = Conexion.conexion;
@@ -1401,6 +1403,12 @@ namespace PruebaC
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            l.Show();
+            this.Close();
+        }
+
         private void pic_bt_borrarRelacion_Click(object sender, EventArgs e)
         {
             int aux = Convert.ToInt32(tabla_Horario.CurrentRow.Index), aux2 = Convert.ToInt32(tabla_relacionHorario.CurrentRow.Index);
@@ -1425,7 +1433,7 @@ namespace PruebaC
             {
                 String horario = tabla_Horario.Rows[aux].Cells[0].Value.ToString();
                 AñadirRelacion Rel = new AñadirRelacion(horario, this);
-                Rel.Show();
+                Rel.ShowDialog();
 
                 if (aviso == 1) cargarTablasOrganizacion();
             }
@@ -1447,9 +1455,5 @@ namespace PruebaC
             }
             else MessageBox.Show("No hay ningún horario al que poder reditar su relación", "Ups");
         }
-
-
-
-
     }
 }

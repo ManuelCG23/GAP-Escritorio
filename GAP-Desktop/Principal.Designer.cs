@@ -28,16 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabTrabajadores = new System.Windows.Forms.TabPage();
+            this.pic_bt_borrar = new System.Windows.Forms.PictureBox();
+            this.pic_bt_editar = new System.Windows.Forms.PictureBox();
+            this.pic_bt_add = new System.Windows.Forms.PictureBox();
             this.label26 = new System.Windows.Forms.Label();
             this.cBox_buscador = new System.Windows.Forms.ComboBox();
             this.txt_buscador = new System.Windows.Forms.TextBox();
@@ -52,6 +55,14 @@
             this.correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label25 = new System.Windows.Forms.Label();
             this.tabHorarios = new System.Windows.Forms.TabPage();
+            this.pic_bt_borrarRelacion = new System.Windows.Forms.PictureBox();
+            this.pic_bt_editarRelación = new System.Windows.Forms.PictureBox();
+            this.pic_bt_addRelacion = new System.Windows.Forms.PictureBox();
+            this.tabla_relacionHorario = new System.Windows.Forms.DataGridView();
+            this.dni_empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_ini = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fecha_fin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prioridad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label30 = new System.Windows.Forms.Label();
             this.tabla_tramosHorarios = new System.Windows.Forms.DataGridView();
             this.dia_semana = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -60,7 +71,11 @@
             this.HE2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HS2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label29 = new System.Windows.Forms.Label();
+            this.pic_bt_eliminarHorario = new System.Windows.Forms.PictureBox();
+            this.pic_bt_editarHorario = new System.Windows.Forms.PictureBox();
+            this.pic_bt_addHorario = new System.Windows.Forms.PictureBox();
             this.tabla_Horario = new System.Windows.Forms.DataGridView();
+            this.nombreH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabGestion = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
             this.bt_tab_horario = new System.Windows.Forms.Button();
@@ -125,6 +140,9 @@
             this.txt_HS1 = new System.Windows.Forms.TextBox();
             this.txt_HE1 = new System.Windows.Forms.TextBox();
             this.tabNosotros = new System.Windows.Forms.TabPage();
+            this.pBox_trash1 = new System.Windows.Forms.PictureBox();
+            this.pBox_trash2 = new System.Windows.Forms.PictureBox();
+            this.pBox_trash3 = new System.Windows.Forms.PictureBox();
             this.mtxt_tlf1 = new System.Windows.Forms.MaskedTextBox();
             this.mtxt_tlf2 = new System.Windows.Forms.MaskedTextBox();
             this.mtxt_tlf3 = new System.Windows.Forms.MaskedTextBox();
@@ -169,29 +187,22 @@
             this.bt_tab_Horarios = new System.Windows.Forms.Button();
             this.bt_tab_trabajadores = new System.Windows.Forms.Button();
             this.mySqlCommand1 = new MySqlConnector.MySqlCommand();
-            this.tabla_relacionHorario = new System.Windows.Forms.DataGridView();
-            this.nombreH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dni_empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha_ini = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fecha_fin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prioridad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pic_bt_borrar = new System.Windows.Forms.PictureBox();
-            this.pic_bt_editar = new System.Windows.Forms.PictureBox();
-            this.pic_bt_add = new System.Windows.Forms.PictureBox();
-            this.pic_bt_borrarRelacion = new System.Windows.Forms.PictureBox();
-            this.pic_bt_editarRelación = new System.Windows.Forms.PictureBox();
-            this.pic_bt_addRelacion = new System.Windows.Forms.PictureBox();
-            this.pic_bt_eliminarHorario = new System.Windows.Forms.PictureBox();
-            this.pic_bt_editarHorario = new System.Windows.Forms.PictureBox();
-            this.pic_bt_addHorario = new System.Windows.Forms.PictureBox();
-            this.pBox_trash1 = new System.Windows.Forms.PictureBox();
-            this.pBox_trash2 = new System.Windows.Forms.PictureBox();
-            this.pBox_trash3 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabTrabajadores.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_borrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_editar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_add)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabla_trabajadores)).BeginInit();
             this.tabHorarios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_borrarRelacion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_editarRelación)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_addRelacion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabla_relacionHorario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabla_tramosHorarios)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_eliminarHorario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_editarHorario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_addHorario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabla_Horario)).BeginInit();
             this.tabGestion.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -200,21 +211,11 @@
             this.groupBox1.SuspendLayout();
             this.tab_Horario.SuspendLayout();
             this.tabNosotros.SuspendLayout();
-            this.gBox_tfl.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tabla_relacionHorario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_borrar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_editar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_add)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_borrarRelacion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_editarRelación)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_addRelacion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_eliminarHorario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_editarHorario)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_addHorario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_trash1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_trash2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_trash3)).BeginInit();
+            this.gBox_tfl.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -227,12 +228,12 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1266, 680);
+            this.tabControl1.Size = new System.Drawing.Size(1281, 680);
             this.tabControl1.TabIndex = 1;
             // 
             // tabTrabajadores
             // 
-            this.tabTrabajadores.BackColor = System.Drawing.Color.Transparent;
+            this.tabTrabajadores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(132)))), ((int)(((byte)(161)))));
             this.tabTrabajadores.Controls.Add(this.pic_bt_borrar);
             this.tabTrabajadores.Controls.Add(this.pic_bt_editar);
             this.tabTrabajadores.Controls.Add(this.pic_bt_add);
@@ -244,9 +245,39 @@
             this.tabTrabajadores.Location = new System.Drawing.Point(4, 22);
             this.tabTrabajadores.Name = "tabTrabajadores";
             this.tabTrabajadores.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTrabajadores.Size = new System.Drawing.Size(1258, 654);
+            this.tabTrabajadores.Size = new System.Drawing.Size(1273, 654);
             this.tabTrabajadores.TabIndex = 0;
             this.tabTrabajadores.Text = "Trabajadores";
+            // 
+            // pic_bt_borrar
+            // 
+            this.pic_bt_borrar.Image = global::PruebaC.Properties.Resources.garbage3;
+            this.pic_bt_borrar.Location = new System.Drawing.Point(1148, 126);
+            this.pic_bt_borrar.Name = "pic_bt_borrar";
+            this.pic_bt_borrar.Size = new System.Drawing.Size(53, 48);
+            this.pic_bt_borrar.TabIndex = 7;
+            this.pic_bt_borrar.TabStop = false;
+            this.pic_bt_borrar.Click += new System.EventHandler(this.pic_bt_borrar_Click);
+            // 
+            // pic_bt_editar
+            // 
+            this.pic_bt_editar.Image = global::PruebaC.Properties.Resources.edit2;
+            this.pic_bt_editar.Location = new System.Drawing.Point(1093, 126);
+            this.pic_bt_editar.Name = "pic_bt_editar";
+            this.pic_bt_editar.Size = new System.Drawing.Size(49, 48);
+            this.pic_bt_editar.TabIndex = 6;
+            this.pic_bt_editar.TabStop = false;
+            this.pic_bt_editar.Click += new System.EventHandler(this.pic_bt_editar_Click);
+            // 
+            // pic_bt_add
+            // 
+            this.pic_bt_add.Image = global::PruebaC.Properties.Resources.addC2;
+            this.pic_bt_add.Location = new System.Drawing.Point(1032, 119);
+            this.pic_bt_add.Name = "pic_bt_add";
+            this.pic_bt_add.Size = new System.Drawing.Size(56, 58);
+            this.pic_bt_add.TabIndex = 5;
+            this.pic_bt_add.TabStop = false;
+            this.pic_bt_add.Click += new System.EventHandler(this.pic_bt_add_Click);
             // 
             // label26
             // 
@@ -282,15 +313,16 @@
             // tabla_trabajadores
             // 
             this.tabla_trabajadores.AllowUserToAddRows = false;
-            this.tabla_trabajadores.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tabla_trabajadores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.tabla_trabajadores.BackgroundColor = System.Drawing.Color.White;
+            this.tabla_trabajadores.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tabla_trabajadores.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.tabla_trabajadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tabla_trabajadores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.DNI,
@@ -301,23 +333,28 @@
             this.fecha_nac,
             this.direccion,
             this.correo});
+            this.tabla_trabajadores.EnableHeadersVisualStyles = false;
             this.tabla_trabajadores.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            this.tabla_trabajadores.Location = new System.Drawing.Point(68, 201);
+            this.tabla_trabajadores.Location = new System.Drawing.Point(42, 201);
             this.tabla_trabajadores.Name = "tabla_trabajadores";
             this.tabla_trabajadores.ReadOnly = true;
             this.tabla_trabajadores.RowHeadersVisible = false;
-            this.tabla_trabajadores.Size = new System.Drawing.Size(1122, 236);
+            this.tabla_trabajadores.RowHeadersWidth = 51;
+            this.tabla_trabajadores.Size = new System.Drawing.Size(1198, 236);
             this.tabla_trabajadores.TabIndex = 1;
             // 
             // DNI
             // 
             this.DNI.HeaderText = "DNI";
+            this.DNI.MinimumWidth = 6;
             this.DNI.Name = "DNI";
             this.DNI.ReadOnly = true;
+            this.DNI.Width = 125;
             // 
             // nombre
             // 
             this.nombre.HeaderText = "Nombre";
+            this.nombre.MinimumWidth = 6;
             this.nombre.Name = "nombre";
             this.nombre.ReadOnly = true;
             this.nombre.Width = 120;
@@ -325,6 +362,7 @@
             // apellidos
             // 
             this.apellidos.HeaderText = "Apellidos";
+            this.apellidos.MinimumWidth = 6;
             this.apellidos.Name = "apellidos";
             this.apellidos.ReadOnly = true;
             this.apellidos.Width = 150;
@@ -332,12 +370,15 @@
             // sexo
             // 
             this.sexo.HeaderText = "Sexo";
+            this.sexo.MinimumWidth = 6;
             this.sexo.Name = "sexo";
             this.sexo.ReadOnly = true;
+            this.sexo.Width = 125;
             // 
             // nacionalidad
             // 
             this.nacionalidad.HeaderText = "Nacionalidad";
+            this.nacionalidad.MinimumWidth = 6;
             this.nacionalidad.Name = "nacionalidad";
             this.nacionalidad.ReadOnly = true;
             this.nacionalidad.Width = 110;
@@ -345,12 +386,15 @@
             // fecha_nac
             // 
             this.fecha_nac.HeaderText = "Fecha de Nacimiento";
+            this.fecha_nac.MinimumWidth = 6;
             this.fecha_nac.Name = "fecha_nac";
             this.fecha_nac.ReadOnly = true;
+            this.fecha_nac.Width = 125;
             // 
             // direccion
             // 
             this.direccion.HeaderText = "Dirección";
+            this.direccion.MinimumWidth = 6;
             this.direccion.Name = "direccion";
             this.direccion.ReadOnly = true;
             this.direccion.Width = 245;
@@ -358,6 +402,7 @@
             // correo
             // 
             this.correo.HeaderText = "Correo";
+            this.correo.MinimumWidth = 6;
             this.correo.Name = "correo";
             this.correo.ReadOnly = true;
             this.correo.Width = 194;
@@ -374,6 +419,7 @@
             // 
             // tabHorarios
             // 
+            this.tabHorarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(132)))), ((int)(((byte)(161)))));
             this.tabHorarios.Controls.Add(this.pic_bt_borrarRelacion);
             this.tabHorarios.Controls.Add(this.pic_bt_editarRelación);
             this.tabHorarios.Controls.Add(this.pic_bt_addRelacion);
@@ -388,10 +434,99 @@
             this.tabHorarios.Location = new System.Drawing.Point(4, 22);
             this.tabHorarios.Name = "tabHorarios";
             this.tabHorarios.Padding = new System.Windows.Forms.Padding(3);
-            this.tabHorarios.Size = new System.Drawing.Size(1258, 654);
+            this.tabHorarios.Size = new System.Drawing.Size(1273, 654);
             this.tabHorarios.TabIndex = 1;
             this.tabHorarios.Text = "Horarios";
-            this.tabHorarios.UseVisualStyleBackColor = true;
+            // 
+            // pic_bt_borrarRelacion
+            // 
+            this.pic_bt_borrarRelacion.Image = global::PruebaC.Properties.Resources.garbage3;
+            this.pic_bt_borrarRelacion.Location = new System.Drawing.Point(750, 516);
+            this.pic_bt_borrarRelacion.Name = "pic_bt_borrarRelacion";
+            this.pic_bt_borrarRelacion.Size = new System.Drawing.Size(53, 48);
+            this.pic_bt_borrarRelacion.TabIndex = 17;
+            this.pic_bt_borrarRelacion.TabStop = false;
+            this.pic_bt_borrarRelacion.Click += new System.EventHandler(this.pic_bt_borrarRelacion_Click);
+            // 
+            // pic_bt_editarRelación
+            // 
+            this.pic_bt_editarRelación.Image = ((System.Drawing.Image)(resources.GetObject("pic_bt_editarRelación.Image")));
+            this.pic_bt_editarRelación.Location = new System.Drawing.Point(746, 462);
+            this.pic_bt_editarRelación.Name = "pic_bt_editarRelación";
+            this.pic_bt_editarRelación.Size = new System.Drawing.Size(49, 48);
+            this.pic_bt_editarRelación.TabIndex = 16;
+            this.pic_bt_editarRelación.TabStop = false;
+            this.pic_bt_editarRelación.Click += new System.EventHandler(this.pic_bt_editarRelación_Click);
+            // 
+            // pic_bt_addRelacion
+            // 
+            this.pic_bt_addRelacion.Image = global::PruebaC.Properties.Resources.addC2;
+            this.pic_bt_addRelacion.Location = new System.Drawing.Point(734, 398);
+            this.pic_bt_addRelacion.Name = "pic_bt_addRelacion";
+            this.pic_bt_addRelacion.Size = new System.Drawing.Size(56, 58);
+            this.pic_bt_addRelacion.TabIndex = 15;
+            this.pic_bt_addRelacion.TabStop = false;
+            this.pic_bt_addRelacion.Click += new System.EventHandler(this.pic_bt_addRelacion_Click);
+            // 
+            // tabla_relacionHorario
+            // 
+            this.tabla_relacionHorario.AllowUserToAddRows = false;
+            this.tabla_relacionHorario.BackgroundColor = System.Drawing.Color.White;
+            this.tabla_relacionHorario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tabla_relacionHorario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
+            this.tabla_relacionHorario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tabla_relacionHorario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dni_empleado,
+            this.fecha_ini,
+            this.fecha_fin,
+            this.prioridad});
+            this.tabla_relacionHorario.EnableHeadersVisualStyles = false;
+            this.tabla_relacionHorario.Location = new System.Drawing.Point(266, 399);
+            this.tabla_relacionHorario.Name = "tabla_relacionHorario";
+            this.tabla_relacionHorario.ReadOnly = true;
+            this.tabla_relacionHorario.RowHeadersVisible = false;
+            this.tabla_relacionHorario.RowHeadersWidth = 51;
+            this.tabla_relacionHorario.Size = new System.Drawing.Size(453, 178);
+            this.tabla_relacionHorario.TabIndex = 14;
+            // 
+            // dni_empleado
+            // 
+            this.dni_empleado.HeaderText = "DNI Trabajador";
+            this.dni_empleado.MinimumWidth = 6;
+            this.dni_empleado.Name = "dni_empleado";
+            this.dni_empleado.ReadOnly = true;
+            this.dni_empleado.Width = 130;
+            // 
+            // fecha_ini
+            // 
+            this.fecha_ini.HeaderText = "Fecha de Inicio";
+            this.fecha_ini.MinimumWidth = 6;
+            this.fecha_ini.Name = "fecha_ini";
+            this.fecha_ini.ReadOnly = true;
+            this.fecha_ini.Width = 110;
+            // 
+            // fecha_fin
+            // 
+            this.fecha_fin.HeaderText = "Fecha de Finalización";
+            this.fecha_fin.MinimumWidth = 6;
+            this.fecha_fin.Name = "fecha_fin";
+            this.fecha_fin.ReadOnly = true;
+            this.fecha_fin.Width = 110;
+            // 
+            // prioridad
+            // 
+            this.prioridad.HeaderText = "Prioridad";
+            this.prioridad.MinimumWidth = 6;
+            this.prioridad.Name = "prioridad";
+            this.prioridad.ReadOnly = true;
+            this.prioridad.Width = 125;
             // 
             // label30
             // 
@@ -404,15 +539,16 @@
             // tabla_tramosHorarios
             // 
             this.tabla_tramosHorarios.AllowUserToAddRows = false;
-            this.tabla_tramosHorarios.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tabla_tramosHorarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.tabla_tramosHorarios.BackgroundColor = System.Drawing.Color.White;
+            this.tabla_tramosHorarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tabla_tramosHorarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.tabla_tramosHorarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tabla_tramosHorarios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dia_semana,
@@ -420,42 +556,54 @@
             this.HS1,
             this.HE2,
             this.HS2});
+            this.tabla_tramosHorarios.EnableHeadersVisualStyles = false;
             this.tabla_tramosHorarios.Location = new System.Drawing.Point(389, 120);
             this.tabla_tramosHorarios.Name = "tabla_tramosHorarios";
             this.tabla_tramosHorarios.ReadOnly = true;
             this.tabla_tramosHorarios.RowHeadersVisible = false;
-            this.tabla_tramosHorarios.Size = new System.Drawing.Size(503, 233);
+            this.tabla_tramosHorarios.RowHeadersWidth = 51;
+            this.tabla_tramosHorarios.Size = new System.Drawing.Size(628, 233);
             this.tabla_tramosHorarios.TabIndex = 12;
             // 
             // dia_semana
             // 
             this.dia_semana.HeaderText = "Dia";
+            this.dia_semana.MinimumWidth = 6;
             this.dia_semana.Name = "dia_semana";
             this.dia_semana.ReadOnly = true;
+            this.dia_semana.Width = 125;
             // 
             // HE1
             // 
             this.HE1.HeaderText = "HE1";
+            this.HE1.MinimumWidth = 6;
             this.HE1.Name = "HE1";
             this.HE1.ReadOnly = true;
+            this.HE1.Width = 125;
             // 
             // HS1
             // 
             this.HS1.HeaderText = "HS1";
+            this.HS1.MinimumWidth = 6;
             this.HS1.Name = "HS1";
             this.HS1.ReadOnly = true;
+            this.HS1.Width = 125;
             // 
             // HE2
             // 
             this.HE2.HeaderText = "HE2";
+            this.HE2.MinimumWidth = 6;
             this.HE2.Name = "HE2";
             this.HE2.ReadOnly = true;
+            this.HE2.Width = 125;
             // 
             // HS2
             // 
             this.HS2.HeaderText = "HS2";
+            this.HS2.MinimumWidth = 6;
             this.HS2.Name = "HS2";
             this.HS2.ReadOnly = true;
+            this.HS2.Width = 125;
             // 
             // label29
             // 
@@ -467,47 +615,88 @@
             this.label29.TabIndex = 11;
             this.label29.Text = "Contenido Horarios";
             // 
+            // pic_bt_eliminarHorario
+            // 
+            this.pic_bt_eliminarHorario.Image = global::PruebaC.Properties.Resources.garbage3;
+            this.pic_bt_eliminarHorario.Location = new System.Drawing.Point(1058, 238);
+            this.pic_bt_eliminarHorario.Name = "pic_bt_eliminarHorario";
+            this.pic_bt_eliminarHorario.Size = new System.Drawing.Size(53, 48);
+            this.pic_bt_eliminarHorario.TabIndex = 10;
+            this.pic_bt_eliminarHorario.TabStop = false;
+            this.pic_bt_eliminarHorario.Click += new System.EventHandler(this.pic_bt_eliminarHorario_Click);
+            // 
+            // pic_bt_editarHorario
+            // 
+            this.pic_bt_editarHorario.Image = ((System.Drawing.Image)(resources.GetObject("pic_bt_editarHorario.Image")));
+            this.pic_bt_editarHorario.Location = new System.Drawing.Point(1054, 184);
+            this.pic_bt_editarHorario.Name = "pic_bt_editarHorario";
+            this.pic_bt_editarHorario.Size = new System.Drawing.Size(49, 48);
+            this.pic_bt_editarHorario.TabIndex = 9;
+            this.pic_bt_editarHorario.TabStop = false;
+            this.pic_bt_editarHorario.Click += new System.EventHandler(this.pic_bt_editarHorario_Click);
+            // 
+            // pic_bt_addHorario
+            // 
+            this.pic_bt_addHorario.Image = global::PruebaC.Properties.Resources.addC2;
+            this.pic_bt_addHorario.Location = new System.Drawing.Point(1042, 120);
+            this.pic_bt_addHorario.Name = "pic_bt_addHorario";
+            this.pic_bt_addHorario.Size = new System.Drawing.Size(56, 58);
+            this.pic_bt_addHorario.TabIndex = 8;
+            this.pic_bt_addHorario.TabStop = false;
+            this.pic_bt_addHorario.Click += new System.EventHandler(this.pic_bt_addHorario_Click);
+            // 
             // tabla_Horario
             // 
             this.tabla_Horario.AllowUserToAddRows = false;
-            this.tabla_Horario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tabla_Horario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.tabla_Horario.BackgroundColor = System.Drawing.Color.White;
+            this.tabla_Horario.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tabla_Horario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle18;
             this.tabla_Horario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tabla_Horario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nombreH});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.tabla_Horario.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.tabla_Horario.DefaultCellStyle = dataGridViewCellStyle19;
+            this.tabla_Horario.EnableHeadersVisualStyles = false;
             this.tabla_Horario.Location = new System.Drawing.Point(87, 120);
             this.tabla_Horario.Name = "tabla_Horario";
             this.tabla_Horario.ReadOnly = true;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tabla_Horario.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.tabla_Horario.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.tabla_Horario.RowHeadersVisible = false;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabla_Horario.RowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.tabla_Horario.RowHeadersWidth = 51;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabla_Horario.RowsDefaultCellStyle = dataGridViewCellStyle21;
             this.tabla_Horario.Size = new System.Drawing.Size(203, 233);
             this.tabla_Horario.TabIndex = 0;
             this.tabla_Horario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tabla_Horario_CellClick);
             this.tabla_Horario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tabla_Horario_CellContentClick);
+            // 
+            // nombreH
+            // 
+            this.nombreH.HeaderText = "Nombre Horario";
+            this.nombreH.MinimumWidth = 6;
+            this.nombreH.Name = "nombreH";
+            this.nombreH.ReadOnly = true;
+            this.nombreH.Width = 200;
             // 
             // tabGestion
             // 
@@ -515,7 +704,7 @@
             this.tabGestion.Controls.Add(this.tabControl2);
             this.tabGestion.Location = new System.Drawing.Point(4, 22);
             this.tabGestion.Name = "tabGestion";
-            this.tabGestion.Size = new System.Drawing.Size(1258, 654);
+            this.tabGestion.Size = new System.Drawing.Size(1273, 654);
             this.tabGestion.TabIndex = 2;
             this.tabGestion.Text = "Gestion";
             this.tabGestion.UseVisualStyleBackColor = true;
@@ -524,28 +713,28 @@
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(132)))), ((int)(((byte)(161)))));
             this.panel4.Controls.Add(this.bt_tab_horario);
             this.panel4.Controls.Add(this.bt_tab_FormularioEmpleado);
             this.panel4.Location = new System.Drawing.Point(-2, 24);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1265, 48);
+            this.panel4.Size = new System.Drawing.Size(1303, 48);
             this.panel4.TabIndex = 11;
             // 
             // bt_tab_horario
             // 
             this.bt_tab_horario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_tab_horario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bt_tab_horario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(132)))), ((int)(((byte)(161)))));
             this.bt_tab_horario.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.bt_tab_horario.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
             this.bt_tab_horario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.bt_tab_horario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.bt_tab_horario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_tab_horario.Font = new System.Drawing.Font("Forte", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_tab_horario.Location = new System.Drawing.Point(233, 9);
+            this.bt_tab_horario.Location = new System.Drawing.Point(230, 9);
             this.bt_tab_horario.Name = "bt_tab_horario";
-            this.bt_tab_horario.Size = new System.Drawing.Size(182, 34);
+            this.bt_tab_horario.Size = new System.Drawing.Size(219, 34);
             this.bt_tab_horario.TabIndex = 5;
             this.bt_tab_horario.Text = "Horarios";
             this.bt_tab_horario.UseVisualStyleBackColor = false;
@@ -555,16 +744,16 @@
             // 
             this.bt_tab_FormularioEmpleado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_tab_FormularioEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.bt_tab_FormularioEmpleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(132)))), ((int)(((byte)(161)))));
             this.bt_tab_FormularioEmpleado.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.bt_tab_FormularioEmpleado.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
             this.bt_tab_FormularioEmpleado.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.bt_tab_FormularioEmpleado.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.bt_tab_FormularioEmpleado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_tab_FormularioEmpleado.Font = new System.Drawing.Font("Forte", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_tab_FormularioEmpleado.Location = new System.Drawing.Point(22, 9);
+            this.bt_tab_FormularioEmpleado.Location = new System.Drawing.Point(7, 9);
             this.bt_tab_FormularioEmpleado.Name = "bt_tab_FormularioEmpleado";
-            this.bt_tab_FormularioEmpleado.Size = new System.Drawing.Size(182, 34);
+            this.bt_tab_FormularioEmpleado.Size = new System.Drawing.Size(217, 34);
             this.bt_tab_FormularioEmpleado.TabIndex = 4;
             this.bt_tab_FormularioEmpleado.Text = "Empleados";
             this.bt_tab_FormularioEmpleado.UseVisualStyleBackColor = false;
@@ -578,11 +767,12 @@
             this.tabControl2.Location = new System.Drawing.Point(0, 24);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1258, 630);
+            this.tabControl2.Size = new System.Drawing.Size(1273, 630);
             this.tabControl2.TabIndex = 0;
             // 
             // tab_Empleado
             // 
+            this.tab_Empleado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(132)))), ((int)(((byte)(161)))));
             this.tab_Empleado.Controls.Add(this.groupBox1);
             this.tab_Empleado.Controls.Add(this.mtxt_Dni);
             this.tab_Empleado.Controls.Add(this.mtxt_num2);
@@ -616,10 +806,9 @@
             this.tab_Empleado.Location = new System.Drawing.Point(4, 22);
             this.tab_Empleado.Name = "tab_Empleado";
             this.tab_Empleado.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_Empleado.Size = new System.Drawing.Size(1250, 604);
+            this.tab_Empleado.Size = new System.Drawing.Size(1265, 604);
             this.tab_Empleado.TabIndex = 0;
             this.tab_Empleado.Text = "tab_Empleado";
-            this.tab_Empleado.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -725,24 +914,28 @@
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(958, 522);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(151, 48);
             this.button3.TabIndex = 56;
             this.button3.Text = "Limpiar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // btn_insertar
             // 
+            this.btn_insertar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.btn_insertar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_insertar.ForeColor = System.Drawing.Color.White;
             this.btn_insertar.Location = new System.Drawing.Point(680, 522);
             this.btn_insertar.Name = "btn_insertar";
             this.btn_insertar.Size = new System.Drawing.Size(151, 48);
             this.btn_insertar.TabIndex = 55;
             this.btn_insertar.Text = "Insertar";
-            this.btn_insertar.UseVisualStyleBackColor = true;
+            this.btn_insertar.UseVisualStyleBackColor = false;
             this.btn_insertar.Click += new System.EventHandler(this.btn_insertar_Click);
             // 
             // label22
@@ -978,6 +1171,7 @@
             // 
             // tab_Horario
             // 
+            this.tab_Horario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(132)))), ((int)(((byte)(161)))));
             this.tab_Horario.Controls.Add(this.label28);
             this.tab_Horario.Controls.Add(this.txt_nHorario);
             this.tab_Horario.Controls.Add(this.bt_accionHorario);
@@ -1002,10 +1196,9 @@
             this.tab_Horario.Location = new System.Drawing.Point(4, 22);
             this.tab_Horario.Name = "tab_Horario";
             this.tab_Horario.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_Horario.Size = new System.Drawing.Size(1250, 604);
+            this.tab_Horario.Size = new System.Drawing.Size(1265, 604);
             this.tab_Horario.TabIndex = 1;
             this.tab_Horario.Text = "tab_Horario";
-            this.tab_Horario.UseVisualStyleBackColor = true;
             // 
             // label28
             // 
@@ -1028,32 +1221,36 @@
             // 
             // bt_accionHorario
             // 
+            this.bt_accionHorario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.bt_accionHorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_accionHorario.ForeColor = System.Drawing.Color.White;
             this.bt_accionHorario.Location = new System.Drawing.Point(34, 261);
             this.bt_accionHorario.Name = "bt_accionHorario";
             this.bt_accionHorario.Size = new System.Drawing.Size(147, 46);
             this.bt_accionHorario.TabIndex = 56;
             this.bt_accionHorario.Text = "Limpiar";
-            this.bt_accionHorario.UseVisualStyleBackColor = true;
+            this.bt_accionHorario.UseVisualStyleBackColor = false;
             this.bt_accionHorario.Click += new System.EventHandler(this.bt_accionHorario_Click);
             // 
             // bt_guardar
             // 
+            this.bt_guardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.bt_guardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_guardar.Location = new System.Drawing.Point(1066, 261);
+            this.bt_guardar.ForeColor = System.Drawing.Color.White;
+            this.bt_guardar.Location = new System.Drawing.Point(1081, 261);
             this.bt_guardar.Name = "bt_guardar";
             this.bt_guardar.Size = new System.Drawing.Size(147, 46);
             this.bt_guardar.TabIndex = 55;
             this.bt_guardar.Text = "Guardar";
-            this.bt_guardar.UseVisualStyleBackColor = true;
+            this.bt_guardar.UseVisualStyleBackColor = false;
             this.bt_guardar.Click += new System.EventHandler(this.bt_guardar_Click);
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.panel5.Location = new System.Drawing.Point(-2, 279);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1254, 10);
+            this.panel5.Size = new System.Drawing.Size(1275, 10);
             this.panel5.TabIndex = 54;
             // 
             // chBox_D
@@ -1236,6 +1433,7 @@
             // 
             // tabNosotros
             // 
+            this.tabNosotros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(132)))), ((int)(((byte)(161)))));
             this.tabNosotros.Controls.Add(this.pBox_trash1);
             this.tabNosotros.Controls.Add(this.pBox_trash2);
             this.tabNosotros.Controls.Add(this.pBox_trash3);
@@ -1274,10 +1472,42 @@
             this.tabNosotros.Controls.Add(this.lbl_nomEmpresa);
             this.tabNosotros.Location = new System.Drawing.Point(4, 22);
             this.tabNosotros.Name = "tabNosotros";
-            this.tabNosotros.Size = new System.Drawing.Size(1258, 654);
+            this.tabNosotros.Size = new System.Drawing.Size(1273, 654);
             this.tabNosotros.TabIndex = 3;
             this.tabNosotros.Text = "Quienes somos";
-            this.tabNosotros.UseVisualStyleBackColor = true;
+            // 
+            // pBox_trash1
+            // 
+            this.pBox_trash1.Image = global::PruebaC.Properties.Resources.garbage2;
+            this.pBox_trash1.Location = new System.Drawing.Point(446, 291);
+            this.pBox_trash1.Name = "pBox_trash1";
+            this.pBox_trash1.Size = new System.Drawing.Size(26, 34);
+            this.pBox_trash1.TabIndex = 53;
+            this.pBox_trash1.TabStop = false;
+            this.pBox_trash1.Visible = false;
+            this.pBox_trash1.Click += new System.EventHandler(this.pBox_trash1_Click);
+            // 
+            // pBox_trash2
+            // 
+            this.pBox_trash2.Image = global::PruebaC.Properties.Resources.garbage2;
+            this.pBox_trash2.Location = new System.Drawing.Point(446, 325);
+            this.pBox_trash2.Name = "pBox_trash2";
+            this.pBox_trash2.Size = new System.Drawing.Size(26, 34);
+            this.pBox_trash2.TabIndex = 52;
+            this.pBox_trash2.TabStop = false;
+            this.pBox_trash2.Visible = false;
+            this.pBox_trash2.Click += new System.EventHandler(this.pBox_trash2_Click);
+            // 
+            // pBox_trash3
+            // 
+            this.pBox_trash3.Image = global::PruebaC.Properties.Resources.garbage2;
+            this.pBox_trash3.Location = new System.Drawing.Point(446, 360);
+            this.pBox_trash3.Name = "pBox_trash3";
+            this.pBox_trash3.Size = new System.Drawing.Size(26, 34);
+            this.pBox_trash3.TabIndex = 51;
+            this.pBox_trash3.TabStop = false;
+            this.pBox_trash3.Visible = false;
+            this.pBox_trash3.Click += new System.EventHandler(this.pBox_trash3_Click);
             // 
             // mtxt_tlf1
             // 
@@ -1317,13 +1547,15 @@
             // 
             // bt_addTlf
             // 
+            this.bt_addTlf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.bt_addTlf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_addTlf.ForeColor = System.Drawing.Color.White;
             this.bt_addTlf.Location = new System.Drawing.Point(95, 472);
             this.bt_addTlf.Name = "bt_addTlf";
             this.bt_addTlf.Size = new System.Drawing.Size(129, 59);
             this.bt_addTlf.TabIndex = 43;
             this.bt_addTlf.Text = "Añadir Número";
-            this.bt_addTlf.UseVisualStyleBackColor = true;
+            this.bt_addTlf.UseVisualStyleBackColor = false;
             this.bt_addTlf.Click += new System.EventHandler(this.bt_addTlf_Click);
             // 
             // gBox_tfl
@@ -1356,7 +1588,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.panel2.Location = new System.Drawing.Point(518, 6);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(10, 193);
@@ -1374,18 +1606,20 @@
             // 
             // bt_guardarTlf
             // 
+            this.bt_guardarTlf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.bt_guardarTlf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_guardarTlf.ForeColor = System.Drawing.Color.White;
             this.bt_guardarTlf.Location = new System.Drawing.Point(202, 112);
             this.bt_guardarTlf.Name = "bt_guardarTlf";
             this.bt_guardarTlf.Size = new System.Drawing.Size(129, 59);
             this.bt_guardarTlf.TabIndex = 43;
             this.bt_guardarTlf.Text = "Guardar";
-            this.bt_guardarTlf.UseVisualStyleBackColor = true;
+            this.bt_guardarTlf.UseVisualStyleBackColor = false;
             this.bt_guardarTlf.Click += new System.EventHandler(this.bt_guardarTlf_Click);
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.panel3.Location = new System.Drawing.Point(0, 7);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(10, 192);
@@ -1435,24 +1669,28 @@
             // 
             // bt_cancelar
             // 
+            this.bt_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.bt_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_cancelar.ForeColor = System.Drawing.Color.White;
             this.bt_cancelar.Location = new System.Drawing.Point(1083, 545);
             this.bt_cancelar.Name = "bt_cancelar";
             this.bt_cancelar.Size = new System.Drawing.Size(129, 59);
             this.bt_cancelar.TabIndex = 32;
             this.bt_cancelar.Text = "Cancelar";
-            this.bt_cancelar.UseVisualStyleBackColor = true;
+            this.bt_cancelar.UseVisualStyleBackColor = false;
             this.bt_cancelar.Click += new System.EventHandler(this.bt_cancelar_Click);
             // 
             // bt_accion
             // 
+            this.bt_accion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.bt_accion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_accion.ForeColor = System.Drawing.Color.White;
             this.bt_accion.Location = new System.Drawing.Point(1083, 458);
             this.bt_accion.Name = "bt_accion";
             this.bt_accion.Size = new System.Drawing.Size(129, 59);
             this.bt_accion.TabIndex = 31;
             this.bt_accion.Text = "Editar";
-            this.bt_accion.UseVisualStyleBackColor = true;
+            this.bt_accion.UseVisualStyleBackColor = false;
             this.bt_accion.Click += new System.EventHandler(this.bt_accion_Click);
             // 
             // txt_correo
@@ -1679,30 +1917,32 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.bt_tab_Nosotros);
             this.panel1.Controls.Add(this.bt_tab_Gestion);
             this.panel1.Controls.Add(this.bt_tab_Horarios);
             this.panel1.Controls.Add(this.bt_tab_trabajadores);
             this.panel1.Location = new System.Drawing.Point(-1, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1268, 47);
+            this.panel1.Size = new System.Drawing.Size(1525, 47);
             this.panel1.TabIndex = 2;
             // 
             // bt_tab_Nosotros
             // 
             this.bt_tab_Nosotros.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_tab_Nosotros.BackColor = System.Drawing.SystemColors.Highlight;
+            this.bt_tab_Nosotros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.bt_tab_Nosotros.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
             this.bt_tab_Nosotros.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
             this.bt_tab_Nosotros.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.bt_tab_Nosotros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.bt_tab_Nosotros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_tab_Nosotros.Font = new System.Drawing.Font("Forte", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_tab_Nosotros.Location = new System.Drawing.Point(655, 9);
+            this.bt_tab_Nosotros.ForeColor = System.Drawing.Color.White;
+            this.bt_tab_Nosotros.Location = new System.Drawing.Point(692, 9);
             this.bt_tab_Nosotros.Name = "bt_tab_Nosotros";
-            this.bt_tab_Nosotros.Size = new System.Drawing.Size(185, 34);
+            this.bt_tab_Nosotros.Size = new System.Drawing.Size(219, 34);
             this.bt_tab_Nosotros.TabIndex = 7;
             this.bt_tab_Nosotros.Text = "Nosotros";
             this.bt_tab_Nosotros.UseVisualStyleBackColor = false;
@@ -1712,16 +1952,17 @@
             // 
             this.bt_tab_Gestion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_tab_Gestion.BackColor = System.Drawing.SystemColors.Highlight;
+            this.bt_tab_Gestion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.bt_tab_Gestion.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
             this.bt_tab_Gestion.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
             this.bt_tab_Gestion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.bt_tab_Gestion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.bt_tab_Gestion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_tab_Gestion.Font = new System.Drawing.Font("Forte", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_tab_Gestion.Location = new System.Drawing.Point(444, 9);
+            this.bt_tab_Gestion.ForeColor = System.Drawing.Color.White;
+            this.bt_tab_Gestion.Location = new System.Drawing.Point(462, 9);
             this.bt_tab_Gestion.Name = "bt_tab_Gestion";
-            this.bt_tab_Gestion.Size = new System.Drawing.Size(185, 34);
+            this.bt_tab_Gestion.Size = new System.Drawing.Size(219, 34);
             this.bt_tab_Gestion.TabIndex = 6;
             this.bt_tab_Gestion.Text = "Gestión";
             this.bt_tab_Gestion.UseVisualStyleBackColor = false;
@@ -1731,16 +1972,17 @@
             // 
             this.bt_tab_Horarios.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_tab_Horarios.BackColor = System.Drawing.SystemColors.Highlight;
+            this.bt_tab_Horarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.bt_tab_Horarios.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
             this.bt_tab_Horarios.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
             this.bt_tab_Horarios.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.bt_tab_Horarios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.bt_tab_Horarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_tab_Horarios.Font = new System.Drawing.Font("Forte", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_tab_Horarios.ForeColor = System.Drawing.Color.White;
             this.bt_tab_Horarios.Location = new System.Drawing.Point(233, 9);
             this.bt_tab_Horarios.Name = "bt_tab_Horarios";
-            this.bt_tab_Horarios.Size = new System.Drawing.Size(185, 34);
+            this.bt_tab_Horarios.Size = new System.Drawing.Size(219, 34);
             this.bt_tab_Horarios.TabIndex = 5;
             this.bt_tab_Horarios.Text = "Organización";
             this.bt_tab_Horarios.UseVisualStyleBackColor = false;
@@ -1750,16 +1992,17 @@
             // 
             this.bt_tab_trabajadores.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_tab_trabajadores.BackColor = System.Drawing.SystemColors.Highlight;
+            this.bt_tab_trabajadores.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.bt_tab_trabajadores.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
             this.bt_tab_trabajadores.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
             this.bt_tab_trabajadores.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.bt_tab_trabajadores.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.bt_tab_trabajadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_tab_trabajadores.Font = new System.Drawing.Font("Forte", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_tab_trabajadores.Location = new System.Drawing.Point(22, 9);
+            this.bt_tab_trabajadores.ForeColor = System.Drawing.Color.White;
+            this.bt_tab_trabajadores.Location = new System.Drawing.Point(8, 9);
             this.bt_tab_trabajadores.Name = "bt_tab_trabajadores";
-            this.bt_tab_trabajadores.Size = new System.Drawing.Size(185, 34);
+            this.bt_tab_trabajadores.Size = new System.Drawing.Size(219, 34);
             this.bt_tab_trabajadores.TabIndex = 4;
             this.bt_tab_trabajadores.Text = "Plantilla";
             this.bt_tab_trabajadores.UseVisualStyleBackColor = false;
@@ -1772,195 +2015,34 @@
             this.mySqlCommand1.Transaction = null;
             this.mySqlCommand1.UpdatedRowSource = System.Data.UpdateRowSource.None;
             // 
-            // tabla_relacionHorario
+            // button1
             // 
-            this.tabla_relacionHorario.AllowUserToAddRows = false;
-            this.tabla_relacionHorario.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.tabla_relacionHorario.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.tabla_relacionHorario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabla_relacionHorario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dni_empleado,
-            this.fecha_ini,
-            this.fecha_fin,
-            this.prioridad});
-            this.tabla_relacionHorario.Location = new System.Drawing.Point(266, 399);
-            this.tabla_relacionHorario.Name = "tabla_relacionHorario";
-            this.tabla_relacionHorario.ReadOnly = true;
-            this.tabla_relacionHorario.RowHeadersVisible = false;
-            this.tabla_relacionHorario.Size = new System.Drawing.Size(453, 178);
-            this.tabla_relacionHorario.TabIndex = 14;
-            // 
-            // nombreH
-            // 
-            this.nombreH.HeaderText = "Nombre Horario";
-            this.nombreH.Name = "nombreH";
-            this.nombreH.ReadOnly = true;
-            this.nombreH.Width = 200;
-            // 
-            // dni_empleado
-            // 
-            this.dni_empleado.HeaderText = "DNI Trabajador";
-            this.dni_empleado.Name = "dni_empleado";
-            this.dni_empleado.ReadOnly = true;
-            this.dni_empleado.Width = 130;
-            // 
-            // fecha_ini
-            // 
-            this.fecha_ini.HeaderText = "Fecha de Inicio";
-            this.fecha_ini.Name = "fecha_ini";
-            this.fecha_ini.ReadOnly = true;
-            this.fecha_ini.Width = 110;
-            // 
-            // fecha_fin
-            // 
-            this.fecha_fin.HeaderText = "Fecha de Finalización";
-            this.fecha_fin.Name = "fecha_fin";
-            this.fecha_fin.ReadOnly = true;
-            this.fecha_fin.Width = 110;
-            // 
-            // prioridad
-            // 
-            this.prioridad.HeaderText = "Prioridad";
-            this.prioridad.Name = "prioridad";
-            this.prioridad.ReadOnly = true;
-            // 
-            // pic_bt_borrar
-            // 
-            this.pic_bt_borrar.Image = global::PruebaC.Properties.Resources.garbage3;
-            this.pic_bt_borrar.Location = new System.Drawing.Point(1148, 126);
-            this.pic_bt_borrar.Name = "pic_bt_borrar";
-            this.pic_bt_borrar.Size = new System.Drawing.Size(53, 48);
-            this.pic_bt_borrar.TabIndex = 7;
-            this.pic_bt_borrar.TabStop = false;
-            this.pic_bt_borrar.Click += new System.EventHandler(this.pic_bt_borrar_Click);
-            // 
-            // pic_bt_editar
-            // 
-            this.pic_bt_editar.Image = global::PruebaC.Properties.Resources.edit2;
-            this.pic_bt_editar.Location = new System.Drawing.Point(1093, 126);
-            this.pic_bt_editar.Name = "pic_bt_editar";
-            this.pic_bt_editar.Size = new System.Drawing.Size(49, 48);
-            this.pic_bt_editar.TabIndex = 6;
-            this.pic_bt_editar.TabStop = false;
-            this.pic_bt_editar.Click += new System.EventHandler(this.pic_bt_editar_Click);
-            // 
-            // pic_bt_add
-            // 
-            this.pic_bt_add.Image = global::PruebaC.Properties.Resources.addC2;
-            this.pic_bt_add.Location = new System.Drawing.Point(1032, 119);
-            this.pic_bt_add.Name = "pic_bt_add";
-            this.pic_bt_add.Size = new System.Drawing.Size(56, 58);
-            this.pic_bt_add.TabIndex = 5;
-            this.pic_bt_add.TabStop = false;
-            this.pic_bt_add.Click += new System.EventHandler(this.pic_bt_add_Click);
-            // 
-            // pic_bt_borrarRelacion
-            // 
-            this.pic_bt_borrarRelacion.Image = global::PruebaC.Properties.Resources.garbage3;
-            this.pic_bt_borrarRelacion.Location = new System.Drawing.Point(750, 516);
-            this.pic_bt_borrarRelacion.Name = "pic_bt_borrarRelacion";
-            this.pic_bt_borrarRelacion.Size = new System.Drawing.Size(53, 48);
-            this.pic_bt_borrarRelacion.TabIndex = 17;
-            this.pic_bt_borrarRelacion.TabStop = false;
-            this.pic_bt_borrarRelacion.Click += new System.EventHandler(this.pic_bt_borrarRelacion_Click);
-            // 
-            // pic_bt_editarRelación
-            // 
-            this.pic_bt_editarRelación.Image = ((System.Drawing.Image)(resources.GetObject("pic_bt_editarRelación.Image")));
-            this.pic_bt_editarRelación.Location = new System.Drawing.Point(746, 462);
-            this.pic_bt_editarRelación.Name = "pic_bt_editarRelación";
-            this.pic_bt_editarRelación.Size = new System.Drawing.Size(49, 48);
-            this.pic_bt_editarRelación.TabIndex = 16;
-            this.pic_bt_editarRelación.TabStop = false;
-            this.pic_bt_editarRelación.Click += new System.EventHandler(this.pic_bt_editarRelación_Click);
-            // 
-            // pic_bt_addRelacion
-            // 
-            this.pic_bt_addRelacion.Image = global::PruebaC.Properties.Resources.addC2;
-            this.pic_bt_addRelacion.Location = new System.Drawing.Point(734, 398);
-            this.pic_bt_addRelacion.Name = "pic_bt_addRelacion";
-            this.pic_bt_addRelacion.Size = new System.Drawing.Size(56, 58);
-            this.pic_bt_addRelacion.TabIndex = 15;
-            this.pic_bt_addRelacion.TabStop = false;
-            this.pic_bt_addRelacion.Click += new System.EventHandler(this.pic_bt_addRelacion_Click);
-            // 
-            // pic_bt_eliminarHorario
-            // 
-            this.pic_bt_eliminarHorario.Image = global::PruebaC.Properties.Resources.garbage3;
-            this.pic_bt_eliminarHorario.Location = new System.Drawing.Point(936, 238);
-            this.pic_bt_eliminarHorario.Name = "pic_bt_eliminarHorario";
-            this.pic_bt_eliminarHorario.Size = new System.Drawing.Size(53, 48);
-            this.pic_bt_eliminarHorario.TabIndex = 10;
-            this.pic_bt_eliminarHorario.TabStop = false;
-            this.pic_bt_eliminarHorario.Click += new System.EventHandler(this.pic_bt_eliminarHorario_Click);
-            // 
-            // pic_bt_editarHorario
-            // 
-            this.pic_bt_editarHorario.Image = ((System.Drawing.Image)(resources.GetObject("pic_bt_editarHorario.Image")));
-            this.pic_bt_editarHorario.Location = new System.Drawing.Point(932, 184);
-            this.pic_bt_editarHorario.Name = "pic_bt_editarHorario";
-            this.pic_bt_editarHorario.Size = new System.Drawing.Size(49, 48);
-            this.pic_bt_editarHorario.TabIndex = 9;
-            this.pic_bt_editarHorario.TabStop = false;
-            this.pic_bt_editarHorario.Click += new System.EventHandler(this.pic_bt_editarHorario_Click);
-            // 
-            // pic_bt_addHorario
-            // 
-            this.pic_bt_addHorario.Image = global::PruebaC.Properties.Resources.addC2;
-            this.pic_bt_addHorario.Location = new System.Drawing.Point(920, 120);
-            this.pic_bt_addHorario.Name = "pic_bt_addHorario";
-            this.pic_bt_addHorario.Size = new System.Drawing.Size(56, 58);
-            this.pic_bt_addHorario.TabIndex = 8;
-            this.pic_bt_addHorario.TabStop = false;
-            this.pic_bt_addHorario.Click += new System.EventHandler(this.pic_bt_addHorario_Click);
-            // 
-            // pBox_trash1
-            // 
-            this.pBox_trash1.Image = global::PruebaC.Properties.Resources.garbage2;
-            this.pBox_trash1.Location = new System.Drawing.Point(446, 291);
-            this.pBox_trash1.Name = "pBox_trash1";
-            this.pBox_trash1.Size = new System.Drawing.Size(26, 34);
-            this.pBox_trash1.TabIndex = 53;
-            this.pBox_trash1.TabStop = false;
-            this.pBox_trash1.Visible = false;
-            this.pBox_trash1.Click += new System.EventHandler(this.pBox_trash1_Click);
-            // 
-            // pBox_trash2
-            // 
-            this.pBox_trash2.Image = global::PruebaC.Properties.Resources.garbage2;
-            this.pBox_trash2.Location = new System.Drawing.Point(446, 325);
-            this.pBox_trash2.Name = "pBox_trash2";
-            this.pBox_trash2.Size = new System.Drawing.Size(26, 34);
-            this.pBox_trash2.TabIndex = 52;
-            this.pBox_trash2.TabStop = false;
-            this.pBox_trash2.Visible = false;
-            this.pBox_trash2.Click += new System.EventHandler(this.pBox_trash2_Click);
-            // 
-            // pBox_trash3
-            // 
-            this.pBox_trash3.Image = global::PruebaC.Properties.Resources.garbage2;
-            this.pBox_trash3.Location = new System.Drawing.Point(446, 360);
-            this.pBox_trash3.Name = "pBox_trash3";
-            this.pBox_trash3.Size = new System.Drawing.Size(26, 34);
-            this.pBox_trash3.TabIndex = 51;
-            this.pBox_trash3.TabStop = false;
-            this.pBox_trash3.Visible = false;
-            this.pBox_trash3.Click += new System.EventHandler(this.pBox_trash3_Click);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Teal;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Forte", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1153, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(117, 34);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "LogOut";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1266, 680);
+            this.ClientSize = new System.Drawing.Size(1281, 680);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GAP-";
@@ -1968,10 +2050,20 @@
             this.tabControl1.ResumeLayout(false);
             this.tabTrabajadores.ResumeLayout(false);
             this.tabTrabajadores.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_borrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_editar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_add)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabla_trabajadores)).EndInit();
             this.tabHorarios.ResumeLayout(false);
             this.tabHorarios.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_borrarRelacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_editarRelación)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_addRelacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tabla_relacionHorario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabla_tramosHorarios)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_eliminarHorario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_editarHorario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_addHorario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabla_Horario)).EndInit();
             this.tabGestion.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -1984,22 +2076,12 @@
             this.tab_Horario.PerformLayout();
             this.tabNosotros.ResumeLayout(false);
             this.tabNosotros.PerformLayout();
-            this.gBox_tfl.ResumeLayout(false);
-            this.gBox_tfl.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tabla_relacionHorario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_borrar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_editar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_add)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_borrarRelacion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_editarRelación)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_addRelacion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_eliminarHorario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_editarHorario)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_bt_addHorario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_trash1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_trash2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBox_trash3)).EndInit();
+            this.gBox_tfl.ResumeLayout(false);
+            this.gBox_tfl.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2157,5 +2239,6 @@
         private System.Windows.Forms.PictureBox pic_bt_borrarRelacion;
         private System.Windows.Forms.PictureBox pic_bt_editarRelación;
         private System.Windows.Forms.PictureBox pic_bt_addRelacion;
+        private System.Windows.Forms.Button button1;
     }
 }

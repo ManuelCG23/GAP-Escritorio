@@ -67,7 +67,7 @@ namespace PruebaC
             {
                 cambiarContraseña(txt_contraseña1.Text);
 
-                MessageBox.Show("Donete");
+                MessageBox.Show("Contraseña actualizada");
             }
         }
     }

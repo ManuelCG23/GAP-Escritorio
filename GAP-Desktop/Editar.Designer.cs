@@ -29,6 +29,7 @@ namespace PruebaC
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editar));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lbl_tipo = new System.Windows.Forms.Label();
             this.cBox_pass = new System.Windows.Forms.CheckBox();
@@ -36,6 +37,7 @@ namespace PruebaC
             this.label23 = new System.Windows.Forms.Label();
             this.txt_contra = new System.Windows.Forms.TextBox();
             this.cbox_crendecialTipo = new System.Windows.Forms.ComboBox();
+            this.lbl_contra = new System.Windows.Forms.Label();
             this.txt_Dni = new System.Windows.Forms.TextBox();
             this.txt_num2 = new System.Windows.Forms.TextBox();
             this.txt_num1 = new System.Windows.Forms.TextBox();
@@ -74,7 +76,6 @@ namespace PruebaC
             this.lbl_correo = new System.Windows.Forms.Label();
             this.mySqlCommand1 = new MySqlConnector.MySqlCommand();
             this.bt_cerrar = new System.Windows.Forms.Button();
-            this.lbl_contra = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -158,6 +159,17 @@ namespace PruebaC
             this.cbox_crendecialTipo.Size = new System.Drawing.Size(171, 24);
             this.cbox_crendecialTipo.TabIndex = 104;
             // 
+            // lbl_contra
+            // 
+            this.lbl_contra.AutoSize = true;
+            this.lbl_contra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_contra.Location = new System.Drawing.Point(223, 140);
+            this.lbl_contra.Name = "lbl_contra";
+            this.lbl_contra.Size = new System.Drawing.Size(77, 16);
+            this.lbl_contra.TabIndex = 103;
+            this.lbl_contra.Text = "Contraseña";
+            this.lbl_contra.Visible = false;
+            // 
             // txt_Dni
             // 
             this.txt_Dni.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -200,13 +212,15 @@ namespace PruebaC
             // 
             // btn_editar
             // 
+            this.btn_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.btn_editar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editar.ForeColor = System.Drawing.Color.White;
             this.btn_editar.Location = new System.Drawing.Point(615, 496);
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.Size = new System.Drawing.Size(151, 48);
             this.btn_editar.TabIndex = 86;
             this.btn_editar.Text = "Editar";
-            this.btn_editar.UseVisualStyleBackColor = true;
+            this.btn_editar.UseVisualStyleBackColor = false;
             this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
             // 
             // lbl_titu_num2
@@ -539,30 +553,22 @@ namespace PruebaC
             // 
             // bt_cerrar
             // 
+            this.bt_cerrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.bt_cerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_cerrar.ForeColor = System.Drawing.Color.White;
             this.bt_cerrar.Location = new System.Drawing.Point(827, 496);
             this.bt_cerrar.Name = "bt_cerrar";
             this.bt_cerrar.Size = new System.Drawing.Size(151, 48);
             this.bt_cerrar.TabIndex = 102;
             this.bt_cerrar.Text = "Cerrar";
-            this.bt_cerrar.UseVisualStyleBackColor = true;
+            this.bt_cerrar.UseVisualStyleBackColor = false;
             this.bt_cerrar.Click += new System.EventHandler(this.bt_cerrar_Click);
-            // 
-            // lbl_contra
-            // 
-            this.lbl_contra.AutoSize = true;
-            this.lbl_contra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_contra.Location = new System.Drawing.Point(223, 140);
-            this.lbl_contra.Name = "lbl_contra";
-            this.lbl_contra.Size = new System.Drawing.Size(77, 16);
-            this.lbl_contra.TabIndex = 103;
-            this.lbl_contra.Text = "Contraseña";
-            this.lbl_contra.Visible = false;
             // 
             // Editar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(132)))), ((int)(((byte)(161)))));
             this.ClientSize = new System.Drawing.Size(1090, 566);
             this.Controls.Add(this.bt_cerrar);
             this.Controls.Add(this.lbl_correo);
@@ -602,6 +608,7 @@ namespace PruebaC
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lbl_titulo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Editar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GAP-";

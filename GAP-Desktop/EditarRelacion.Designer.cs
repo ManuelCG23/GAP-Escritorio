@@ -29,6 +29,7 @@ namespace PruebaC
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditarRelacion));
             this.btn_cancelar = new System.Windows.Forms.Button();
             this.btn_editar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,24 +48,28 @@ namespace PruebaC
             // 
             // btn_cancelar
             // 
+            this.btn_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.ForeColor = System.Drawing.Color.White;
             this.btn_cancelar.Location = new System.Drawing.Point(434, 247);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(151, 48);
             this.btn_cancelar.TabIndex = 69;
             this.btn_cancelar.Text = "Cancelar";
-            this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.UseVisualStyleBackColor = false;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // btn_editar
             // 
+            this.btn_editar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.btn_editar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editar.ForeColor = System.Drawing.Color.White;
             this.btn_editar.Location = new System.Drawing.Point(134, 247);
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.Size = new System.Drawing.Size(151, 48);
             this.btn_editar.TabIndex = 68;
             this.btn_editar.Text = "Editar";
-            this.btn_editar.UseVisualStyleBackColor = true;
+            this.btn_editar.UseVisualStyleBackColor = false;
             this.btn_editar.Click += new System.EventHandler(this.btn_editar_Click);
             // 
             // label5
@@ -195,6 +200,7 @@ namespace PruebaC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(132)))), ((int)(((byte)(161)))));
             this.ClientSize = new System.Drawing.Size(739, 321);
             this.Controls.Add(this.lbl_prioridad);
             this.Controls.Add(this.lbl_trabajador);
@@ -210,6 +216,7 @@ namespace PruebaC
             this.Controls.Add(this.cBox_trabajador);
             this.Controls.Add(this.lbl_horario);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditarRelacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GAP-Editar Realcion";

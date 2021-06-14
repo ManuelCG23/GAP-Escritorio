@@ -29,6 +29,7 @@ namespace PruebaC
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AñadirRelacion));
             this.label1 = new System.Windows.Forms.Label();
             this.lbl_horario = new System.Windows.Forms.Label();
             this.cBox_trabajador = new System.Windows.Forms.ComboBox();
@@ -145,30 +146,35 @@ namespace PruebaC
             // 
             // btn_insertar
             // 
+            this.btn_insertar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.btn_insertar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_insertar.ForeColor = System.Drawing.Color.White;
             this.btn_insertar.Location = new System.Drawing.Point(127, 249);
             this.btn_insertar.Name = "btn_insertar";
             this.btn_insertar.Size = new System.Drawing.Size(151, 48);
             this.btn_insertar.TabIndex = 56;
             this.btn_insertar.Text = "Insertar";
-            this.btn_insertar.UseVisualStyleBackColor = true;
+            this.btn_insertar.UseVisualStyleBackColor = false;
             this.btn_insertar.Click += new System.EventHandler(this.btn_insertar_Click);
             // 
             // btn_cancelar
             // 
+            this.btn_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
             this.btn_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar.ForeColor = System.Drawing.Color.White;
             this.btn_cancelar.Location = new System.Drawing.Point(427, 249);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(151, 48);
             this.btn_cancelar.TabIndex = 57;
             this.btn_cancelar.Text = "Cancelar";
-            this.btn_cancelar.UseVisualStyleBackColor = true;
+            this.btn_cancelar.UseVisualStyleBackColor = false;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
             // 
             // AñadirRelacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(132)))), ((int)(((byte)(161)))));
             this.ClientSize = new System.Drawing.Size(711, 322);
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.btn_insertar);
@@ -182,6 +188,7 @@ namespace PruebaC
             this.Controls.Add(this.cBox_trabajador);
             this.Controls.Add(this.lbl_horario);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AñadirRelacion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GAP-Crear Relación";

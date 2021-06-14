@@ -40,58 +40,66 @@ namespace PruebaC
             // lbl_titulo
             // 
             this.lbl_titulo.AutoSize = true;
-            this.lbl_titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_titulo.Location = new System.Drawing.Point(79, 34);
             this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(407, 18);
+            this.lbl_titulo.Size = new System.Drawing.Size(435, 20);
             this.lbl_titulo.TabIndex = 0;
             this.lbl_titulo.Text = "¿Desea recibir una nueva contraseña de transicción?";
             // 
             // lbl_anot
             // 
             this.lbl_anot.AutoSize = true;
+            this.lbl_anot.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_anot.Location = new System.Drawing.Point(133, 62);
             this.lbl_anot.Name = "lbl_anot";
-            this.lbl_anot.Size = new System.Drawing.Size(281, 13);
+            this.lbl_anot.Size = new System.Drawing.Size(355, 16);
             this.lbl_anot.TabIndex = 1;
             this.lbl_anot.Text = "Una vez se acceda con ella podrá cambiar por una propia";
             // 
             // bt_accion
             // 
+            this.bt_accion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.bt_accion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_accion.ForeColor = System.Drawing.Color.White;
             this.bt_accion.Location = new System.Drawing.Point(136, 147);
             this.bt_accion.Name = "bt_accion";
-            this.bt_accion.Size = new System.Drawing.Size(105, 23);
+            this.bt_accion.Size = new System.Drawing.Size(109, 38);
             this.bt_accion.TabIndex = 2;
             this.bt_accion.Text = "Enviar";
-            this.bt_accion.UseVisualStyleBackColor = true;
+            this.bt_accion.UseVisualStyleBackColor = false;
             this.bt_accion.Click += new System.EventHandler(this.button1_Click);
             // 
             // bt_cancelar
             // 
+            this.bt_cancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(46)))), ((int)(((byte)(71)))));
+            this.bt_cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_cancelar.ForeColor = System.Drawing.Color.White;
             this.bt_cancelar.Location = new System.Drawing.Point(309, 147);
             this.bt_cancelar.Name = "bt_cancelar";
-            this.bt_cancelar.Size = new System.Drawing.Size(105, 23);
+            this.bt_cancelar.Size = new System.Drawing.Size(105, 38);
             this.bt_cancelar.TabIndex = 4;
             this.bt_cancelar.Text = "Cancelar";
-            this.bt_cancelar.UseVisualStyleBackColor = true;
+            this.bt_cancelar.UseVisualStyleBackColor = false;
             this.bt_cancelar.Click += new System.EventHandler(this.bt_cancelar_Click);
             // 
             // txt_usuario
             // 
             this.txt_usuario.BackColor = System.Drawing.SystemColors.Window;
+            this.txt_usuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_usuario.Location = new System.Drawing.Point(208, 94);
             this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(169, 20);
+            this.txt_usuario.Size = new System.Drawing.Size(169, 22);
             this.txt_usuario.TabIndex = 5;
             this.txt_usuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(141, 96);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 13);
+            this.label3.Size = new System.Drawing.Size(62, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "Usuario";
             // 
@@ -99,7 +107,8 @@ namespace PruebaC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 194);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(132)))), ((int)(((byte)(161)))));
+            this.ClientSize = new System.Drawing.Size(571, 227);
             this.ControlBox = false;
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_usuario);

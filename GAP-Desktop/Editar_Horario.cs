@@ -54,6 +54,40 @@ namespace PruebaC
 
             reader.Close();
             conexion.Close();
+
+            //if (txt_HE1_L.Text == "LE1") quitarTodo();
+        }
+
+        public void quitarTodo()
+        {
+            txt_HE1_L.Text = "";
+            txt_HE1_M.Text = "";
+            txt_HE1_X.Text = "";
+            txt_HE1_J.Text = "";
+            txt_HE1_V.Text = "";
+            txt_HE1_S.Text = "";
+            txt_HE1_D.Text = "";
+            txt_HE2_L.Text = "";
+            txt_HE2_M.Text = "";
+            txt_HE2_X.Text = "";
+            txt_HE2_J.Text = "";
+            txt_HE2_V.Text = "";
+            txt_HE2_S.Text = "";
+            txt_HE2_D.Text = "";
+            txt_HS1_L.Text = "";
+            txt_HS1_M.Text = "";
+            txt_HS1_X.Text = "";
+            txt_HS1_J.Text = "";
+            txt_HS1_V.Text = "";
+            txt_HS1_S.Text = "";
+            txt_HS1_D.Text = "";
+            txt_HS2_L.Text = "";
+            txt_HS2_M.Text = "";
+            txt_HS2_X.Text = "";
+            txt_HS2_J.Text = "";
+            txt_HS2_V.Text = "";
+            txt_HS2_S.Text = "";
+            txt_HS2_D.Text = "";
         }
 
         public void actualizarTramoHorario(string dia, string HE1, string HS1, string HE2, string HS2)
@@ -62,10 +96,12 @@ namespace PruebaC
             {
                 conexion.Open();
                 string query = "UPDATE contenido_horario SET HE1 = '"+ HE1 + "', HS1 = '"+HS1+ "', HE2 = '" + HE2 + "', HS2 = '" + HS2 + "' where nombre_horario = '" + nom + "' && dia_semana = '"+dia+"'";
+                MessageBox.Show(query);
                 MySqlCommand comando = new MySqlCommand(query, conexion);
                 comando.ExecuteNonQuery();
 
                 MessageBox.Show( dia + " actualizado", "Operación completada");
+                p.aviso = 1;
 
             }
             catch (Exception e)
